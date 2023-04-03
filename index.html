@@ -13,188 +13,215 @@
 
 <body>
 
-    <div class="container">
-        <div class="wrapper">
-            <form onsubmit="return false;">
-                <!-- Total Wealth of Zakah -->
-                <fieldset>
-                    <div class="panel">Amount of Total Wealth of Zakah</div>
-                    <div class="row">
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="gold">Gold</label>
-                                <input type="number" id="gold" class="form-control" placeholder="Enter Amount">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="silver">Silver</label>
-                                <input type="number" id="silver" class="form-control" placeholder="Enter Amount">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="local_currency">Local Currency</label>
-                                <input type="number" id="local_currency" class="form-control"
-                                    placeholder="Enter Amount">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="foreign_currency">Foreign Currency</label>
-                                <input type="number" id="foreign_currency" class="form-control"
-                                    placeholder="Enter Amount">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="bank_deposit">Money Deposited in Banks (excluding interest)</label>
-                                <input type="number" id="bank_deposit" class="form-control" placeholder="Enter Amount">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="prize_bonds">Prize Bonds</label>
-                                <input type="number" id="prize_bonds" class="form-control" placeholder="Enter Amount">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="provident_fund">Money Deposited in Provident Fund</label>
-                                <input type="number" id="provident_fund" class="form-control"
-                                    placeholder="Enter Amount">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="committee_deposit">Money Deposited in Committee</label>
-                                <input type="number" id="committee_deposit" class="form-control"
-                                    placeholder="Enter Amount">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="raw_materials">Raw Materials in Factory</label>
-                                <input type="number" id="raw_materials" class="form-control" placeholder="Enter Amount">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="manufactured_goods">Manufactured Goods in Factory/Shop</label>
-                                <input type="number" id="manufactured_goods" class="form-control"
-                                    placeholder="Enter Amount">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="property">Plots, Houses or Flats for Trading</label>
-                                <input type="number" id="property" class="form-control" placeholder="Enter Amount">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="business_assets">Business Partnership Assets</label>
-                                <input type="number" id="business_assets" class="form-control"
-                                    placeholder="Enter Amount">
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
-
-                <!-- Liabilities -->
-                <fieldset>
-                    <div class="panel">Liabilities</div>
-                    <div class="row">
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="loan">Loan</label>
-                                <input type="number" id="loan" class="form-control" placeholder="Enter Amount">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="instalments">Dues Instalments on House, Shop, Things</label>
-                                <input type="number" id="instalments" class="form-control" placeholder="Enter Amount">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="committee_payable">Remaining Payable Amount of Committee</label>
-                                <input type="number" id="committee_payable" class="form-control"
-                                    placeholder="Enter Amount">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="utility_bills">Utility Bills (Gas, Electricity, etc.)</label>
-                                <input type="number" id="utility_bills" class="form-control" placeholder="Enter Amount">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="payables">Payables to Dealers</label>
-                                <input type="number" id="payables" class="form-control" placeholder="Enter Amount">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="salaries">Salaries of Employees</label>
-                                <input type="number" id="salaries" class="form-control" placeholder="Enter Amount">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="form-group">
-                                <label for="unpaid_zakah">Unpaid Zakah of Previous Year</label>
-                                <input type="number" id="unpaid_zakah" class="form-control" placeholder="Enter Amount">
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
-
-                <!-- Submit Button -->
-                <div class="row">
-                    <div class="col d-flex justify-content-center">
-                        <div class="form-group">
-                            <button class="btn btn-primary" id="btnCalculate">Calculate
-                                Zakah</button>
-                        </div>
-                    </div>
+    <header>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 col-12">
+                    <h1>Zakah Calculator</h1>
                 </div>
-            </form>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <!-- Zakah Calculation Results -->
-    <div class="container-fluid">
-        <div class="wrapper-result">
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="panel">Zakah Calculation Results</div>
-                            <div class="row">
-                                <div class="col-lg-6 col-12">
-                                    <label for="unpaid_zakah">Amount of Total Wealth of Zakat</label>
-                                    <p id="total_wealth">0</p>
-                                </div>
-                                <div class="col-lg-6 col-12">
-                                    <label for="unpaid_zakah">Total Liabilities</label>
-                                    <p id="liabilities">0</p>
+    <section>
+        <div class="container">
+            <div class="wrapper">
+                <form onsubmit="return false;">
+                    <!-- Total Wealth of Zakah -->
+                    <fieldset>
+                        <div class="panel">Amount of Total Wealth of Zakah</div>
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="gold">Gold</label>
+                                    <input type="number" id="gold" class="form-control" placeholder="Enter Amount">
                                 </div>
                             </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-lg-6 col-12">
-                                    <label for="unpaid_zakah">Total Amount for Zakah</label>
-                                    <p id="zakah_base">0</p>
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="silver">Silver</label>
+                                    <input type="number" id="silver" class="form-control" placeholder="Enter Amount">
                                 </div>
-                                <div class="col-lg-6 col-12">
-                                    <label for="unpaid_zakah">Payable Zakah Amount</label>
-                                    <p id="zakah_payable">0</p>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="local_currency">Local Currency</label>
+                                    <input type="number" id="local_currency" class="form-control"
+                                        placeholder="Enter Amount">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="foreign_currency">Foreign Currency</label>
+                                    <input type="number" id="foreign_currency" class="form-control"
+                                        placeholder="Enter Amount">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="bank_deposit">Money Deposited in Banks (excluding interest)</label>
+                                    <input type="number" id="bank_deposit" class="form-control"
+                                        placeholder="Enter Amount">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="prize_bonds">Prize Bonds</label>
+                                    <input type="number" id="prize_bonds" class="form-control"
+                                        placeholder="Enter Amount">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="provident_fund">Money Deposited in Provident Fund</label>
+                                    <input type="number" id="provident_fund" class="form-control"
+                                        placeholder="Enter Amount">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="committee_deposit">Money Deposited in Committee</label>
+                                    <input type="number" id="committee_deposit" class="form-control"
+                                        placeholder="Enter Amount">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="receivableLoan">Receivable Loan</label>
+                                    <input type="number" id="receivableLoan" class="form-control"
+                                        placeholder="Enter Amount">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="raw_materials">Raw Materials in Factory</label>
+                                    <input type="number" id="raw_materials" class="form-control"
+                                        placeholder="Enter Amount">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="manufactured_goods">Manufactured Goods in Factory/Shop</label>
+                                    <input type="number" id="manufactured_goods" class="form-control"
+                                        placeholder="Enter Amount">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="property">Plots, Houses or Flats for Trading</label>
+                                    <input type="number" id="property" class="form-control" placeholder="Enter Amount">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="business_assets">Business Partnership Assets</label>
+                                    <input type="number" id="business_assets" class="form-control"
+                                        placeholder="Enter Amount">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Liabilities -->
+                    <fieldset>
+                        <div class="panel">Liabilities</div>
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="loan">Loan</label>
+                                    <input type="number" id="loan" class="form-control" placeholder="Enter Amount">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="instalments">Dues Instalments on House, Shop, Things</label>
+                                    <input type="number" id="instalments" class="form-control"
+                                        placeholder="Enter Amount">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="committee_payable">Remaining Payable Amount of Committee</label>
+                                    <input type="number" id="committee_payable" class="form-control"
+                                        placeholder="Enter Amount">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="utility_bills">Utility Bills (Gas, Electricity, etc.)</label>
+                                    <input type="number" id="utility_bills" class="form-control"
+                                        placeholder="Enter Amount">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="payables">Payables to Dealers</label>
+                                    <input type="number" id="payables" class="form-control" placeholder="Enter Amount">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="salaries">Salaries of Employees</label>
+                                    <input type="number" id="salaries" class="form-control" placeholder="Enter Amount">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="form-group">
+                                    <label for="unpaid_zakah">Unpaid Zakah of Previous Year</label>
+                                    <input type="number" id="unpaid_zakah" class="form-control"
+                                        placeholder="Enter Amount">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Submit Button -->
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <div class="form-group">
+                                <button class="btn btnCalculate" id="btnCalculate">Calculate Zakah</button>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btnReset" id="btnReset">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Zakah Calculation Results -->
+        <div class="container-fluid">
+            <div class="wrapper-result">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="panel">Zakah Calculation Results</div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-12">
+                                        <label for="unpaid_zakah">Amount of Total Wealth of Zakat</label>
+                                        <p id="total_wealth">0</p>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <label for="unpaid_zakah">Total Liabilities</label>
+                                        <p id="liabilities">0</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-6 col-12">
+                                        <label for="unpaid_zakah">Total Amount for Zakah</label>
+                                        <p id="zakah_base">0</p>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <label for="unpaid_zakah">Payable Zakah Amount</label>
+                                        <p id="zakah_payable">0</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -202,7 +229,50 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col watermark">
+                    Developed and Maintained by Nabeel Sohail
+                </div>
+            </div>
+            <div class="row">
+                <div class="col copyright">
+                    &copy; <span id="currYear"></span> Copyright - All Rights Reserved
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col portfolio">
+                    <a href="https://nabeelsohail2630.wixsite.com/portfolio"
+                        target="_blank">nabeelsohail2630.wixsite.com/portfolio</a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col social">
+                    <ul class="media-icons">
+                        <li><a href="https://github.com/NabeelSohail-30" target="_blank"><img src="Images/github.png"
+                                    alt=""></a></li>
+                        <li><a href="https://www.linkedin.com/in/nabeel-sohail-a63508200/" target="_blank"><img
+                                    src="Images/linkedin.png" alt=""></a></li>
+                        <li><a href="https://wa.me/923453628868" target="_blank"><img src="Images/whatsapp.png"
+                                    alt=""></a>
+                        </li>
+                        <li><a href="mailto:nabeel.sohail2630@outlook.com" target="_blank"><img src="Images/email.png"
+                                    alt=""></a></li>
+                        <li><a href="https://www.instagram.com/coder_nabeel30/?hl=en" target="_blank"><img
+                                    src="Images/instagram.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!--My Js File-->
     <script src="app.js" defer></script>

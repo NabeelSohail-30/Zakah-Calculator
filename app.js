@@ -1,3 +1,5 @@
+document.getElementById("currYear").innerHTML = new Date().getFullYear();
+
 let btn = document.querySelector('#btnCalculate');
 btn.addEventListener('click', function () {
     // Get all the input fields
@@ -10,6 +12,7 @@ btn.addEventListener('click', function () {
     const prizeBondsField = document.getElementById("prize_bonds");
     const providentFundField = document.getElementById("provident_fund");
     const committeeMoneyField = document.getElementById("committee_deposit");
+    const receivableLoanField = document.getElementById("receivableLoan");
     const rawMaterialsField = document.getElementById("raw_materials");
     const manufacturedGoodsField = document.getElementById("manufactured_goods");
     const propertyField = document.getElementById("property");
@@ -32,6 +35,7 @@ btn.addEventListener('click', function () {
     const prizeBonds = prizeBondsField.value ? parseFloat(prizeBondsField.value) : 0;
     const providentFund = providentFundField.value ? parseFloat(providentFundField.value) : 0;
     const committeeMoney = committeeMoneyField.value ? parseFloat(committeeMoneyField.value) : 0;
+    const receivableLoan = receivableLoanField.value ? parseFloat(receivableLoanField.value) : 0;
     const rawMaterials = rawMaterialsField.value ? parseFloat(rawMaterialsField.value) : 0;
     const manufacturedGoods = manufacturedGoodsField.value ? parseFloat(manufacturedGoodsField.value) : 0;
     const property = propertyField.value ? parseFloat(propertyField.value) : 0;
@@ -69,7 +73,7 @@ btn.addEventListener('click', function () {
     console.log(`Unpaid Zakah: ${unpaidZakah}`);
 
     console.log("Amount on which Zakah has to be calculated:");
-    const totalWealth = gold + silver + localCurrency + foreignCurrency + bankMoney + prizeBonds + providentFund + committeeMoney + rawMaterials + manufacturedGoods + property + businessAssets;
+    const totalWealth = gold + silver + localCurrency + foreignCurrency + bankMoney + prizeBonds + providentFund + committeeMoney + receivableLoan + rawMaterials + manufacturedGoods + property + businessAssets;
 
     const totalLiabilities = loan + duesInstalments + committeePayable + utilityBills + payables + employeeSalaries + unpaidZakah;
 
@@ -82,3 +86,4 @@ btn.addEventListener('click', function () {
     document.getElementById("zakah_base").innerHTML = zakahBaseAmount;
     document.getElementById("zakah_payable").innerHTML = zakahPayable;
 });
+
