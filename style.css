@@ -1,3 +1,4 @@
+/*-----------------------base-----------------------*/
 :root {
     --dark: #083D77;
     --light: #eae5e1;
@@ -6,42 +7,45 @@
     --black: #000000;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
     background-color: var(--dark);
     color: var(--black);
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin: 0;
 }
 
+/*-----------------------header-----------------------*/
+
+header {
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 16px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/*-----------------------main-----------------------*/
+
+/*---------------------wrappers---------------------*/
 .wrapper {
     background-color: var(--gray);
     padding: 28px;
     border-radius: 6px;
     margin: 40px auto;
-}
-
-section .row {
-    margin: 12px -15px;
-}
-
-.panel {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: center;
-    background-color: var(--dark);
-    color: var(--white);
-    padding: 16px;
-    border-radius: 6px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-
-.form-group {
-    margin-bottom: 16px;
-    margin-top: 12px;
 }
 
 .wrapper-result {
@@ -62,6 +66,35 @@ section .row {
     margin-bottom: 30px;
 }
 
+section .container-fluid {
+    width: 60%;
+}
+
+section .row {
+    margin: 12px -15px;
+}
+
+/*--------------------forms--------------------*/
+
+.panel {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 16px;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+    margin-top: 12px;
+}
+
+
+
 label {
     display: block;
     font-size: 1.2rem;
@@ -77,6 +110,7 @@ input {
     box-sizing: border-box;
 }
 
+/*---------------------buttons---------------------*/
 .btn {
     margin: auto 14px;
 }
@@ -101,98 +135,67 @@ input {
     color: var(--dark);
 }
 
-header {
+/*-----------------------footer-----------------------*/
+.footer {
     background-color: var(--light);
     color: var(--dark);
     padding: 16px;
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: 700;
+    margin-top: 30px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-footer {
-    background-color: var(--light);
-    color: var(--dark);
-    display: flex;
-    justify-content: center;
-    height: fit-content;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    width: 100%;
-    bottom: 0px;
-    margin-top: 40px;
-}
-
-.watermark {
-    font-size: 14px;
-    font-weight: bold;
+.footer .watermark {
     text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 16px;
 }
 
 .copyright {
-    font-size: 12px;
     text-align: center;
-    font-weight: bold;
-    margin-top: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.portfolio {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px;
+    color: var(--dark);
 }
 
 .portfolio a {
-    font-size: 12px;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 10px;
-    text-decoration: none;
     color: var(--dark);
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.media-icons {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.media-icons li {
-    margin: 0px 8px;
-}
-
-.media-icons li a img {
-    width: 25px;
-    height: 25px;
 }
 
 hr {
+    background-color: var(--dark);
     width: 100vh;
-    border: 1px solid var(--dark);
+    height: 1px;
 }
 
-.container-fluid {
-    width: 60%;
+.media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
 }
 
-@media screen and (max-width: 768px) {
-    .container-fluid {
-        width: 70%;
-    }
+.media-icons a {
+    color: var(--dark);
+    font-size: 1.5rem;
+    margin: 0 8px;
 }
 
-@media screen and (max-width: 576px) {
-    .container-fluid {
-        width: 80%;
-    }
+.media-icons li {
+    list-style: none;
 }
 
-@media screen and (min-width: 480px) and (max-width: 576px) {
-    .container-fluid {
-        width: 90%;
-    }
+.media-icons a img {
+    width: 32px;
+    height: 32px;
 }
+
+/*-------------------Responsive-------------------*/
